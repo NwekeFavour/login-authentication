@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .navi{
     background-color: #E5E5E5;
 }
@@ -11,6 +16,7 @@
 .links li:hover{
     border-bottom: 1px solid #0426ff;
 }
+
 
 .facebook{
     color: #3751FE;
