@@ -1,0 +1,48 @@
+
+
+
+.navi{
+    background-color: #E5E5E5;
+}
+
+.Clip{
+    position: relative;
+    right: 225px;
+    bottom: 2px
+}
+
+.links li:hover{
+    border-bottom: 1px solid #0426ff;
+}
+
+.facebook{
+    color: #3751FE;
+}
+
+.LinkedIn{
+    color: #3751FE;
+}
+
+.Google{
+    color: #3751FE;
+}
+.sign{
+    width: 129px;
+    height: 54px;
+}
+
+.login{
+    width: 129px;
+    height: 54px;
+}
+.Logo p{
+    color: #3751FE;
+    font-size: 30px;
+}
+.art p{
+    font-size: 36px;
+    color: #3751FE;
+}
+.form-control{
+    border-left: 3px solid  #0426ff !important;
+}
