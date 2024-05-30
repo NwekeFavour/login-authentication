@@ -31,23 +31,12 @@
                     </div>
                     <div class='d-md-flex align-items-center gap-3 mt-5'>
                         <div>
-                            <button class='btn sign btn-primary'>SIGN UP</button>
-                        </div>
-                        <div class='login border d-md-flex align-items-center justify-content-center border-primary px-3 py-2'>
-                            <ul class='list-unstyled  m-0'>
-                                <li>
-                                    <a href='' class='  text-decoration-none'>LOGIN</a>
-                                </li>
-                            </ul>
+                            <button class='btn login btn-primary'>Login</button>
                         </div>
                     </div>
                     <div class='d-md-flex align-items-center gap-4 mt-5'>
                         <div>
-                            <ul class='list-unstyled'>
-                                <li>
-                                    <a href='' class='text-dark text-decoration-none'>or login with</a>
-                                </li>
-                            </ul>
+                            <p>or login with</p>
                         </div>    
                         <div class='facebook'>
                             <p>facebook</p>
@@ -63,12 +52,8 @@
                 <div class='col-md-6 navi d-none d-md-block my-5'>
                     <div>
                         <ul class='list-unstyled gap-4 links py-3 d-md-flex align-items-center justify-content-center'>
-                            <li>
-
-                            </li>
-                            <li>
-                                
-                            </li>
+                            <router-link to="/">Sign up</router-link>
+                            <router-link to="/login">Login</router-link>
                         </ul>
                     </div>
                     <div class='Clip'>

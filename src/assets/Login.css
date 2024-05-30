@@ -26,15 +26,11 @@
 .Google{
     color: #3751FE;
 }
-.sign{
-    width: 129px;
-    height: 54px;
-}
-
 .login{
     width: 129px;
     height: 54px;
 }
+
 .Logo p{
     color: #3751FE;
     font-size: 30px;
@@ -45,4 +41,14 @@
 }
 .form-control{
     border-left: 3px solid  #0426ff !important;
+}
+
+a{
+    text-decoration: none;
+    color: #0426ff;
+    font-size: 25px;
+}
+
+.router-link-exact-active:hover{
+    color: #000 !important;
 }
