@@ -27,18 +27,19 @@
                             <input type="password" v-model="formData.floatingPassword" email="email" class="form-control shadow-none" id="floatingPassword" placeholder="Password">
                             <label for="floatingPassword">Password</label>
                         </div>
-                   </form>
-                    <div class="form-check mt-3">
-                        <input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Default checkbox
-                        </label>
-                    </div>
-                    <div class='d-md-flex align-items-center gap-3 mt-5'>
-                        <div>
-                            <button class='btn sign btn-primary'>SIGN UP</button>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
                         </div>
-                    </div>
+                        <div class='d-md-flex align-items-center gap-3 mt-5'>
+                            <div>
+                                <button  class='btn sign btn-primary'>SIGN UP</button>
+                            </div>
+                        </div>
+                   </form>
+                   
                     <div class='d-md-flex align-items-center gap-4 mt-5'>
                         <div>
                             <p>or login with</p>
@@ -72,6 +73,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
 export default {
     name: 'createPost',
     data() {
@@ -86,7 +88,9 @@ export default {
     },
     methods: {
         createPost(){
-            
+            axios.post('https://jsonplaceholder.typicode.com/posts', this.formData)
+            .then((response) => console.log(response))
+            .catch((error) => console.log(error))
         }
     }
 }
