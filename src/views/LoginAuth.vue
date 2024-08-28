@@ -30,7 +30,7 @@
                         </div>
                         <div class='d-md-flex align-items-center gap-3 mt-5'>
                             <div>
-                                <button @click='createGet' class='btn login btn-primary'>Login</button>
+                                <button class='btn login btn-primary'>Login</button>
                             </div>
                         </div>
                    </form>
@@ -66,7 +66,7 @@
     </div>
 </template>
 <script>
-//  import axios from 'axios';
+ import axios from 'axios';
 
 export default {
     name: 'createGet',
@@ -82,10 +82,12 @@ export default {
         }
     },
     methods: {
-        createGet(){
-            // axios.get('https://jsonplaceholder.typicode.com/posts')
-            // .then((response) => console.log(response.data))
-            // .catch((error) => console.log(error))
+        async createGet(){
+            const response = await axios.post('login', {
+                email: this.email,
+                Password: this.Password
+            });
+            console.log(response);
         }
     }
 }

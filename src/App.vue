@@ -10,7 +10,8 @@ import './bootstrap-5.3.3-dist/css/bootstrap.min.css'
 
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  
 }
 </script>
 
